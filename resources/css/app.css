@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Manrope', 'Inter', 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Space Grotesk', 'Manrope', 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-rise {
+    animation: rise 700ms ease-out both;
+}
+
+::selection {
+    background: #34d399;
+    color: #020617;
+}
+
+body {
+    letter-spacing: 0;
+    font-feature-settings: 'ss01' 1, 'cv05' 1;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Space Grotesk', 'Manrope', 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+}
+
+p,
+a,
+button,
+input,
+textarea,
+select {
+    font-family: 'Manrope', 'Inter', 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+}
