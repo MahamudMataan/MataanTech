@@ -102,6 +102,7 @@
                 @endforeach
             </div>
             <div class="border-t border-white/10 px-5 py-5 text-center text-xs text-slate-500">Copyright {{ date('Y') }} MataanTech. All rights reserved.</div>
+            <p class="px-5 pb-5 text-center text-sm text-slate-400">KvK 42126452</p>
         </footer>
     </div>
 </body>
