@@ -28,7 +28,7 @@ Start the lead-protection work alongside the mobile foundation. Complete the adm
 
 ## 3. Public contact address
 
-Confirm the exact spelling and verify that the destination mailbox or alias receives mail before opening a separate contact-address PR. The repository currently renders the existing address in the shared footer, homepage quote copy, contact page and review link. Change the visible text and `mailto:` targets together, preserve the review subject, and check both locales. The enquiry form stores submissions in the database, so this display change is separate from mail transport and form processing. Verify link destinations in the preview and confirm receipt with an approved test message before any release.
+The confirmed public contact address is `info@mataantech.com`. Preserve it in the shared footer, homepage quote copy, contact page and review link. During the redesign, check that the displayed address and `mailto:` links match in both locales and that the review link keeps its subject. The enquiry form continues to store submissions in the database.
 
 ## Review checklist
 
