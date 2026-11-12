@@ -5,7 +5,7 @@
         <span class="absolute right-5 top-5 rounded bg-emerald-400 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-black">Popular</span>
     @endif
     <h3 class="text-2xl font-semibold">{{ $package->name }}</h3>
-    <div class="mt-5 flex items-end gap-1">
+    <div class="mt-5 {{ $package->is_care_plan ? 'flex flex-wrap items-baseline gap-x-1' : 'grid gap-2' }}">
         <span class="text-4xl font-semibold tracking-tight">{{ $package->price }}</span>
         @if ($package->billing_period)
             <span class="pb-1 text-sm text-slate-300">{{ $package->billing_period }}</span>

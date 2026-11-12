@@ -42,7 +42,6 @@ class DatabaseSeeder extends Seeder
 
         $packages = [
             ['Starter', 'starter', 'Starting from EUR 750', null, 'Perfect for new and small businesses looking to establish a professional online presence.', ['Up to 5 custom pages', 'Responsive design', 'Contact form', 'Google Maps integration', 'Basic SEO setup', 'Fast loading website', '30 days of support'], 1, false, false],
-            ['Growth', 'growth', 'Starting from EUR 1,750', null, 'Designed for growing businesses that want a website focused on generating leads.', ['Everything in Starter', 'Up to 10 pages', 'Custom design', 'Booking or quotation system', 'Advanced forms', 'Google Analytics', 'Speed optimisation', 'Enhanced SEO', '60 days of support'], 2, true, false],
             ['Scale', 'scale', 'Starting from EUR 3,500', null, 'A complete custom solution for established businesses that need advanced functionality.', ['Everything in Growth', 'Fully custom development', 'AI chatbot integration', 'CRM integration', 'Business automations', 'Custom dashboards', 'Advanced functionality', 'Priority support', '90 days of support'], 3, false, false],
             ['Essential Care', 'essential-care', 'EUR 49', '/month', 'Keep your finished website secure, backed up, and monitored.', ['Security updates', 'Website backups', 'Plugin updates', 'Uptime monitoring', 'Small technical fixes'], 4, false, true],
             ['Growth Care', 'growth-care', 'EUR 149', '/month', 'A proactive support plan for teams that want steady improvements.', ['Everything in Essential', 'Monthly website updates', 'Performance optimisation', 'SEO improvements', 'Analytics report', 'Priority support'], 5, true, true],
@@ -64,6 +63,8 @@ class DatabaseSeeder extends Seeder
                 ],
             );
         }
+
+        $this->call(GrowthPricingSeeder::class);
 
         PortfolioProject::query()->delete();
 
